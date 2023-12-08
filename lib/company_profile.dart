@@ -82,6 +82,7 @@ class CompanyProfile extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.blueAccent,
                         fontSize: 20,
+                        fontFamily: 'Air',
                       ),
                     ),
                   ),
