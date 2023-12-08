@@ -13,29 +13,28 @@ class _State extends State<PageViewText> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: const Text(
-          'Sudeep Nagarkar',
-          style: TextStyle(
-            color: Colors.white70,
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+  appBar: AppBar(
+    backgroundColor: Colors.red,
+    title: Text(
+      'Sudeep Nagarkar',
+      style: TextStyle(
+        color: Colors.white70,
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
       ),
+    ),
+  ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: 300,
+            height: 250,
             child: PageView.builder(
-              itemCount: appDataText.length,
-              itemBuilder: (context, index) {
-                return DisplayText(appDataText: appDataText[index]);
-              },
-            ),
-          )
+                itemCount: appDataText.length,
+                itemBuilder: (context,index){
+              return DisplayText(appDataText: appDataText[index]);
+            }),
+          ),
         ],
       ),
     );

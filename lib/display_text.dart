@@ -9,7 +9,8 @@ class DisplayText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 350,
+         width: 350,
+        // height: 200,
         color: Colors.redAccent,
         child: Center(
           child: Text(
@@ -18,6 +19,7 @@ class DisplayText extends StatelessWidget {
             style: const TextStyle(
               color: Colors.white70,
               fontSize: 25,
+              fontWeight: FontWeight.bold,
               letterSpacing: 1.5,
             ),
           ),
