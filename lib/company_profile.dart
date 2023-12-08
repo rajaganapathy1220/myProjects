@@ -38,6 +38,7 @@ class CompanyProfile extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.blueAccent,
                         fontSize: 25,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
@@ -54,6 +55,7 @@ class CompanyProfile extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(10),
                 child: Card(
+                  margin: EdgeInsets.all(10),
                   child: ListTile(
                     leading: Icon(
                       Icons.phone,
@@ -72,6 +74,7 @@ class CompanyProfile extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(10),
                 child: Card(
+                  margin: EdgeInsets.all(10),
                   child: ListTile(
                     leading: Icon(
                       Icons.email_outlined,
@@ -82,7 +85,7 @@ class CompanyProfile extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.blueAccent,
                         fontSize: 20,
-                        fontFamily: 'Air',
+                       // fontFamily: 'Air',
                       ),
                     ),
                   ),
@@ -91,6 +94,7 @@ class CompanyProfile extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(10),
                 child: Card(
+                  margin: EdgeInsets.all(10),
                   child: ListTile(
                     leading: Icon(
                       Icons.web,
@@ -109,6 +113,7 @@ class CompanyProfile extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(10),
                 child: Card(
+                  margin: EdgeInsets.all(10),
                   child: ListTile(
                     leading: Icon(
                       Icons.location_on,
