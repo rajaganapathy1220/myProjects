@@ -16,6 +16,7 @@ class DisplayText extends StatelessWidget {
             appDataText.text,
             textAlign: TextAlign.center,
             style: const TextStyle(
+              color: Colors.white70,
               fontSize: 25,
               letterSpacing: 1.5,
             ),
