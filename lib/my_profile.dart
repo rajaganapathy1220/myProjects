@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapps/drawer_navigation.dart';
 
 class MyProfile extends StatelessWidget {
   const MyProfile({super.key});
@@ -6,6 +7,7 @@ class MyProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerNavigation(),
       appBar: AppBar(
         backgroundColor: Colors.indigoAccent,
         title: const Text(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapps/app_data_text.dart';
 import 'package:flutterapps/display_text.dart';
+import 'package:flutterapps/drawer_navigation.dart';
 
 class PageViewText extends StatefulWidget {
   const PageViewText({super.key});
@@ -13,13 +14,14 @@ class _State extends State<PageViewText> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerNavigation(),
   appBar: AppBar(
     backgroundColor: Colors.red,
     title: Text(
-      'Sudeep Nagarkar',
+      'Sudeep Nagarkar Quotes',
       style: TextStyle(
         color: Colors.white70,
-        fontSize: 30,
+        fontSize: 25,
         fontWeight: FontWeight.bold,
       ),
     ),

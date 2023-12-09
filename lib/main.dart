@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapps/company_profile.dart';
 import 'package:flutterapps/my_profile.dart';
+import 'package:flutterapps/page_view_image.dart';
 import 'package:flutterapps/page_view_text.dart';
 
 void main() {

@@ -11,7 +11,11 @@ class DisplayText extends StatelessWidget {
       child: Container(
          width: 350,
         // height: 200,
-        color: Colors.redAccent,
+       decoration: BoxDecoration(
+         borderRadius: BorderRadius.circular(25),
+         color: Colors.red,
+
+       ),
         child: Center(
           child: Text(
             appDataText.text,
