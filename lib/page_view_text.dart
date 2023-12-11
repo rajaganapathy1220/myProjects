@@ -15,32 +15,30 @@ class _State extends State<PageViewText> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: DrawerNavigation(),
-  appBar: AppBar(
-    backgroundColor: Colors.red,
-    iconTheme: IconThemeData(
-      color: Colors.white70,
-    ),
-    title: Text(
-      'Sudeep Nagarkar Quotes',
-      style: TextStyle(
-        color: Colors.white70,
-        fontSize: 25,
-        fontWeight: FontWeight.bold,
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        iconTheme: IconThemeData(
+          color: Colors.white70,
+        ),
+        title: Text(
+          'Sudeep Nagarkar Quotes',
+          style: TextStyle(
+            color: Colors.white70,
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
-    ),
-  ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-
         children: [
           Container(
             height: 250,
             child: PageView.builder(
-              scrollDirection: Axis.vertical,
                 itemCount: appDataText.length,
-                itemBuilder: (context,index){
-              return DisplayText(appDataText: appDataText[index]);
-            }),
+                itemBuilder: (context, index) {
+                  return DisplayText(appDataText: appDataText[index]);
+                }),
           ),
         ],
       ),
