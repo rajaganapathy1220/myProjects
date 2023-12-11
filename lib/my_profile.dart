@@ -10,6 +10,9 @@ class MyProfile extends StatelessWidget {
       drawer: DrawerNavigation(),
       appBar: AppBar(
         backgroundColor: Colors.indigoAccent,
+        iconTheme: IconThemeData(
+          color: Colors.white70,
+        ),
         title: const Text(
           'My Profile',
           style: TextStyle(

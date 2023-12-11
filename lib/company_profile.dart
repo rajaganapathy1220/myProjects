@@ -10,6 +10,9 @@ class CompanyProfile extends StatelessWidget {
       drawer: DrawerNavigation(),
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
+        iconTheme: IconThemeData(
+          color: Colors.white70,
+        ),
         title: const Text(
           'Company Profile',
           style: TextStyle(

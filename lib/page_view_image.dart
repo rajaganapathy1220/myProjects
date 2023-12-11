@@ -18,6 +18,9 @@ class _PageViewImageState extends State<PageViewImage> {
       ),
       appBar: AppBar(
         backgroundColor: Colors.red,
+        iconTheme: IconThemeData(
+          color: Colors.white70,
+        ),
         title: const Text(
           'Warren Buffet Qoutes',
           style: TextStyle(

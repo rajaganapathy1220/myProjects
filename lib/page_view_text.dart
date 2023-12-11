@@ -17,6 +17,9 @@ class _State extends State<PageViewText> {
       drawer: DrawerNavigation(),
   appBar: AppBar(
     backgroundColor: Colors.red,
+    iconTheme: IconThemeData(
+      color: Colors.white70,
+    ),
     title: Text(
       'Sudeep Nagarkar Quotes',
       style: TextStyle(
@@ -28,10 +31,12 @@ class _State extends State<PageViewText> {
   ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+
         children: [
           Container(
             height: 250,
             child: PageView.builder(
+              scrollDirection: Axis.vertical,
                 itemCount: appDataText.length,
                 itemBuilder: (context,index){
               return DisplayText(appDataText: appDataText[index]);
