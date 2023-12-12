@@ -3,6 +3,7 @@ import 'package:flutterapps/company_profile.dart';
 import 'package:flutterapps/my_profile.dart';
 import 'package:flutterapps/page_view_image.dart';
 import 'package:flutterapps/page_view_text.dart';
+import 'package:flutterapps/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
