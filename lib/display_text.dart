@@ -12,7 +12,7 @@ class DisplayText extends StatelessWidget {
          width: 350,
         // height: 200,
        decoration: BoxDecoration(
-         borderRadius: BorderRadius.circular(25),
+         borderRadius: BorderRadius.circular(50),
          color: Colors.red,
 
        ),

@@ -14,24 +14,25 @@ class DrawerNavigation extends StatefulWidget {
 class _DrawerNavigationState extends State<DrawerNavigation> {
   @override
   Widget build(BuildContext context) {
-    return
-      Drawer(
+    return Drawer(
       backgroundColor: Colors.red,
       child: ListView(
         children: [
           const UserAccountsDrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.red
+              image: DecorationImage(
+                image: AssetImage('images/nature SK.png'),
+                fit: BoxFit.cover
+              ),
             ),
             accountName: Text('Author Quotes'),
             accountEmail: Text('Version1.0.0'),
             currentAccountPicture: CircleAvatar(
-
-             // child: ClipOval(
-             //  child: Image(
-                backgroundImage: AssetImage('images/sudeep.png'),
-              ),
-              ),
+              // child: ClipOval(
+              //  child: Image(
+              backgroundImage: AssetImage('images/sudeep.png'),
+            ),
+          ),
           //   ),
           // ),
           ListTile(
@@ -82,8 +83,8 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
               ),
             ),
             onTap: () {
-              Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => MyProfile()));
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => MyProfile()));
             },
           ),
         ],

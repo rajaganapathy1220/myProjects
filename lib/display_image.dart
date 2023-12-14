@@ -12,11 +12,11 @@ class DisplayImage extends StatelessWidget {
       child: Container(
         width: 350,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: BorderRadius.circular(30),
           color: Colors.red,
           image: DecorationImage(
             image: AssetImage(appDataImage.image),
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
           ),
         ),
       ),
