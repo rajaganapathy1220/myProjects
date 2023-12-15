@@ -32,23 +32,33 @@ class _State extends State<PageViewText> {
           ),
         ),
         actions: [
-          PopupMenuButton(
-            itemBuilder: (context) => [
-              PopupMenuItem(
-                value: 1,
-                child: Text(
-                  'Share',
-                  style: TextStyle(
-                    fontSize: 20,
+          Icon(
+            Icons.help_outline,
+          ),
+
+          Icon(
+            Icons.search_sharp,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(1.0),
+            child: PopupMenuButton(
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: 1,
+                  child: Text(
+                    'Share',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
                   ),
                 ),
-              ),
-            ],
-            onSelected: (value) {
-              if (value == 1) {
-                _share();
-              }
-            },
+              ],
+              onSelected: (value) {
+                if (value == 1) {
+                  _share();
+                }
+              },
+            ),
           ),
         ],
       ),

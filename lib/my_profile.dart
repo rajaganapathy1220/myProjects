@@ -15,11 +15,18 @@ class MyProfile extends StatelessWidget {
         ),
         title: const Text(
           'My Profile',
+       //   textScaler: TextScaler.linear(1),
+        //  maxLines: , most words within thw line,
+//strutStyle: StrutStyle(
+ // height: 1,
+//),
+      //  textWidthBasis: TextWidthBasis.longestLine, dynamic titles we use it will automatically adjust for its length
           style: TextStyle(
             fontWeight: FontWeight.normal,
-            fontSize: 30,
-            color: Colors.white70,
+            fontSize: 20,
+            color: Colors.white,
           ),
+
         ),
       ),
       body: const SafeArea(

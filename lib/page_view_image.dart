@@ -114,7 +114,11 @@ class _PageViewImageState extends State<PageViewImage> {
         await rootBundle.load(appDataImage[_selectedIndex].image);
     final temp = await getTemporaryDirectory();
     final path = '${temp.path}/wb_1.png';
+    print(path);
     File(path).writeAsBytes(imagebyte.buffer.asUint8List());
     await Share.shareFiles([path], text: 'Image Shared');
+   // final ByteData bytes =  await rootBundle.load(appDataImage[_selectedIndex].image);
+   // await Share.file('esysimage','esys.png',bytes.buffer.asUint8List(),'images/png');
+
   }
 }

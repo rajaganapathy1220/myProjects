@@ -18,24 +18,39 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
       backgroundColor: Colors.red,
       child: ListView(
         children: [
-          const UserAccountsDrawerHeader(
+           UserAccountsDrawerHeader(
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('images/nature SK.png'),
-                fit: BoxFit.cover
+                fit: BoxFit.cover,
+              //  alignment: Alignment(5, 7),
+           // filterQuality: FilterQuality.low,
+         //       opacity: double.negativeInfinity,
               ),
             ),
             accountName: Text('Author Quotes'),
             accountEmail: Text('Version1.0.0'),
-            currentAccountPicture: CircleAvatar(
-              // child: ClipOval(
-              //  child: Image(
-              backgroundImage: AssetImage('images/sudeep.png'),
+
+
+            currentAccountPicture: Align(
+              alignment: Alignment.center,
+              child: CircleAvatar(
+                // child: ClipOval(
+                //  child: Image(
+                radius: 30,
+                backgroundImage: AssetImage('images/sudeep.png'),
+                         //   foregroundColor: Colors.blue,
+
+              ),
             ),
           ),
           //   ),
           // ),
           ListTile(
+            leading: Icon(
+              Icons.format_quote_sharp,
+              color: Colors.deepPurple,
+            ),
             title: const Text(
               'Quotes Text',
               style: TextStyle(
