@@ -32,12 +32,18 @@ class _State extends State<PageViewText> {
           ),
         ),
         actions: [
-          Icon(
-            Icons.help_outline,
+          SizedBox(
+            width: 40,
+            child: Icon(
+              Icons.help_outline,
+            ),
           ),
 
-          Icon(
-            Icons.search_sharp,
+          SizedBox(
+            width: 20,
+            child: Icon(
+              Icons.search_sharp,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(1.0),

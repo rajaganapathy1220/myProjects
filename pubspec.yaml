@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   share_plus:
   path_provider:
+  flare_flutter:
+  loading_animation_widget:
 
 dev_dependencies:
   flutter_test:
