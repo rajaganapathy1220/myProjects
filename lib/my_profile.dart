@@ -8,6 +8,7 @@ class MyProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: DrawerNavigation(),
+
       appBar: AppBar(
         backgroundColor: Colors.indigoAccent,
         iconTheme: IconThemeData(
@@ -26,8 +27,9 @@ class MyProfile extends StatelessWidget {
             fontSize: 20,
             color: Colors.white,
           ),
-
         ),
+        centerTitle: true,
+        elevation: 9,
       ),
       body: const SafeArea(
           child: Center(

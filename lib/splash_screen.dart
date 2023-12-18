@@ -14,29 +14,26 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    Timer(
-        Duration(seconds: 5),
-        () => Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => PageViewText())));
-  }
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   Timer(
+  //       Duration(seconds: 5),
+  //       () => Navigator.of(context).pushReplacement(
+  //           MaterialPageRoute(builder: (context) => PageViewText())));
+  // }
 
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center(
-                  child: LoadingAnimationWidget.staggeredDotsWave(
-              size: 40, color: Colors.black87
-                ),
-            )
-          ],
-
-        ),
-
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: LoadingAnimationWidget.staggeredDotsWave(
+                size: 40, color: Colors.black87),
+          )
+        ],
+      ),
     );
   }
 }
